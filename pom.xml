@@ -19,8 +19,8 @@
 		<jvm.args.gc.log.file.rotation>-XX:+UseGCLogFileRotation</jvm.args.gc.log.file.rotation>
 		<jvm.args.number.of.gc.log.files>-XX:NumberOfGCLogFiles=5</jvm.args.number.of.gc.log.files>
 		<jvm.args.gc.log.file.size>-XX:GCLogFileSize=10M</jvm.args.gc.log.file.size>
-	    <sonar.projectKey>samplebugwebapp</sonar.projectKey>
-    	<sonar.organization>SampleBugWebApp</sonar.organization>
+	    <sonar.organization>SampleBugWebApp</sonar.organization>
+		<sonar.projectKey>samplebugwebapp</sonar.projectKey>
     	<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 </properties>
 
