@@ -138,6 +138,13 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			<!--- SonarCloud Plug-In-->
+			<plugin>
+            	<groupId>org.sonarsource.scanner.maven</groupId>
+            	<artifactId>sonar-maven-plugin</artifactId>
+            	<version>4.0.0.4121</version>
+        	</plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-enforcer-plugin</artifactId>
