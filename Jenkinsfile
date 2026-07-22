@@ -1,21 +1,21 @@
 pipeline {
   agent any
   tools { 
-        maven 'Maven_3_5_2'  
+        maven 'Maven'  
     }
    stages{
     stage('CompileandRunSonarAnalysis') {
             steps {	
-		sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=asgbuggywebapp -Dsonar.organization=asgbuggywebapp -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=932558e169d66a8f1d1adf470b908a46156f5844'
+		bat 'mvn clean verify sonar:sonar -Dsonar.projectKey=samplebugwebapp -Dsonar.organization=SampleBugWebApp -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=74e68cdc781833a09346c31f563ccbf67b18792f'
 			}
     }
 
-	stage('RunSCAAnalysisUsingSnyk') {
-            steps {		
-				withCredentials([string(credentialsId: 'SNYK_TOKEN', variable: 'SNYK_TOKEN')]) {
-					sh 'mvn snyk:test -fn'
-				}
-			}
-    }		
+#	stage('RunSCAAnalysisUsingSnyk') {
+ #           steps {		
+	#			withCredentials([string(credentialsId: 'SNYK_TOKEN', variable: 'SNYK_TOKEN')]) {
+	#				sh 'mvn snyk:test -fn'
+	#			}
+	#		}
+    #}		
   }
 }
