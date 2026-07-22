@@ -143,9 +143,9 @@
 			</plugin>
 			<!--- SonarCloud Plug-In-->
 			<plugin>
-            	<groupId>org.sonarsource.scanner.maven</groupId>
-            	<artifactId>sonar-maven-plugin</artifactId>
-            	<version>4.0.0.4121</version>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>5.7.0.6970</version>
         	</plugin>
 
 			<plugin>
